@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Email field
+           
             TextField(
               controller: email,
               decoration: InputDecoration(
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(height: 15),
 
-            // Password field
+           
             TextField(
               controller: password,
               obscureText: true,
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(height: 20),
 
-            // Button
+            
             ElevatedButton(
               onPressed: () {
                 print(email.text);
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(isLogin ? "Login" : "Register"),
             ),
 
-            // Switch button
+            
             TextButton(
               onPressed: () {
                 setState(() {
